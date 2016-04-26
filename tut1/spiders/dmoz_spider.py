@@ -18,7 +18,8 @@ class DmozSpider(BaseSpider):
        sites = hxs.select('//fieldset/ul/li') 
        #sites = hxs.select('//ul/li') 
        items = [] 
-       for site in sites: 
+       for site in sites:
+           print "=================================================="
            item = DmozItem() 
            item['title'] = site.select('a/text()').extract() 
            item['link'] = site.select('a/@href').extract() 
