@@ -1,0 +1,31 @@
+[1mdiff --git a/tut1/__init__.pyc b/tut1/__init__.pyc[m
+[1mindex 58e91d5..9093e13 100644[m
+Binary files a/tut1/__init__.pyc and b/tut1/__init__.pyc differ
+[1mdiff --git a/tut1/items.pyc b/tut1/items.pyc[m
+[1mindex 8e20a81..adf96f5 100644[m
+Binary files a/tut1/items.pyc and b/tut1/items.pyc differ
+[1mdiff --git a/tut1/settings.pyc b/tut1/settings.pyc[m
+[1mindex d289ed7..f2b7e1f 100644[m
+Binary files a/tut1/settings.pyc and b/tut1/settings.pyc differ
+[1mdiff --git a/tut1/spiders/__init__.pyc b/tut1/spiders/__init__.pyc[m
+[1mindex f50639f..676c19f 100644[m
+Binary files a/tut1/spiders/__init__.pyc and b/tut1/spiders/__init__.pyc differ
+[1mdiff --git a/tut1/spiders/dmoz_spider.py b/tut1/spiders/dmoz_spider.py[m
+[1mindex a4447f7..fbe457e 100644[m
+[1m--- a/tut1/spiders/dmoz_spider.py[m
+[1m+++ b/tut1/spiders/dmoz_spider.py[m
+[36m@@ -18,7 +18,8 @@[m [mclass DmozSpider(BaseSpider):[m
+        sites = hxs.select('//fieldset/ul/li') [m
+        #sites = hxs.select('//ul/li') [m
+        items = [] [m
+[31m-       for site in sites: [m
+[32m+[m[32m       for site in sites:[m
+[32m+[m[32m           print "=================================================="[m
+            item = DmozItem() [m
+            item['title'] = site.select('a/text()').extract() [m
+            item['link'] = site.select('a/@href').extract() [m
+[1mdiff --git a/tut1/spiders/dmoz_spider.pyc b/tut1/spiders/dmoz_spider.pyc[m
+[1mindex 67a30c1..b64c15e 100644[m
+Binary files a/tut1/spiders/dmoz_spider.pyc and b/tut1/spiders/dmoz_spider.pyc differ
+warning: LF will be replaced by CRLF in tut1/spiders/dmoz_spider.py.
+The file will have its original line endings in your working directory.
