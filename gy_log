@@ -21,4 +21,10 @@ ssh-keygen -t rsa -C "youremail@example.com" 生成远程SSH
 登陆GitHub，创建了一个新的Git仓库，tu2
 git remote add origin git@github.com:guyong613/.git 关联远程库
 $ git push -u origin master 推送，第一次加u参数，以后不用
+<<<<<<< HEAD
+=======
+
+从远程克隆，会自建目录git clone git@github.com:michaelliao/gitskills.git
+git checkout命令加上-b参数表示创建并切换git checkout -b dev
+>>>>>>> dev
 temp master
