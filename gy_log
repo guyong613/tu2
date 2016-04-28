@@ -24,4 +24,8 @@ $ git push -u origin master 推送，第一次加u参数，以后不用
 
 从远程克隆，会自建目录git clone git@github.com:michaelliao/gitskills.git
 git checkout命令加上-b参数表示创建并切换git checkout -b dev
-temp dev1
+
+git rm -r myFolder
+删除文件夹myFolder，并把它从git的仓库管理系统中移除
+
+git rm \*~ （会递归的删除当前目录 以及 子目录下的以“~”结尾的文件）
