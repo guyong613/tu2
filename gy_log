@@ -24,4 +24,4 @@ $ git push -u origin master 推送，第一次加u参数，以后不用
 
 从远程克隆，会自建目录git clone git@github.com:michaelliao/gitskills.git
 git checkout命令加上-b参数表示创建并切换git checkout -b dev
-temp dev
+temp dev1
